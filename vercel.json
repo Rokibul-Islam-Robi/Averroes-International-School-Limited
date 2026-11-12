@@ -2,10 +2,14 @@
   "version": 2,
   "builds": [
     { "src": "router.php", "use": "vercel-php@0.7.1" },
-    { "src": "assets/**", "use": "@vercel/static" }
+    { "src": "assets/**", "use": "@vercel/static" },
+    { "src": "admin/css/**", "use": "@vercel/static" },
+    { "src": "admin/js/**", "use": "@vercel/static" }
   ],
   "routes": [
     { "src": "/assets/(.*)", "dest": "/assets/$1" },
+    { "src": "/admin/css/(.*)", "dest": "/admin/css/$1" },
+    { "src": "/admin/js/(.*)", "dest": "/admin/js/$1" },
     { "src": "/(.*)", "dest": "/router.php" }
   ]
 }
