@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 110" width="100%" height="100%">
+  <defs>
+    <linearGradient id="tfGreenAura" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ecfdf5"/>
+      <stop offset="100%" stop-color="#d1fae5"/>
+    </linearGradient>
+    <linearGradient id="tfGrass1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="tfGrass2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+    <linearGradient id="tfBallWhite" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#f1f5f9"/>
+      <stop offset="100%" stop-color="#cbd5e1"/>
+    </linearGradient>
+    <linearGradient id="tfBallDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="tfGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047"/>
+      <stop offset="50%" stop-color="#f58220"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <filter id="tfShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="2.5" flood-color="#064e3b" flood-opacity="0.25"/>
+    </filter>
+    <filter id="tfBallShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="1" dy="3.5" stdDeviation="2" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background Fresh Green Aura -->
+  <circle cx="60" cy="50" r="36" fill="url(#tfGreenAura)" opacity="0.6"/>
+
+  <!-- Stadium Lighting & Energy Glow from Above -->
+  <ellipse cx="60" cy="18" rx="20" ry="4" fill="#fef08a" opacity="0.4"/>
+  <circle cx="28" cy="16" r="2" fill="#fde047"/>
+  <circle cx="92" cy="16" r="2" fill="#fde047"/>
+  <!-- Light Beams -->
+  <polygon points="28,16 20,45 36,45" fill="#fef08a" opacity="0.15"/>
+  <polygon points="92,16 84,45 100,45" fill="#fef08a" opacity="0.15"/>
+
+  <!-- 3D Perspective Turf Field Base (Green Artificial Grass Platform) -->
+  <g filter="url(#tfShadow)">
+    <!-- Turf Base Platform Slab -->
+    <path d="M12 78 L26 42 L94 42 L108 78 C108 81, 106 84, 103 85 L17 85 C14 84, 12 81, 12 78 Z" fill="#047857"/>
+    <!-- Alternating Grass Stripes -->
+    <polygon points="26,42 38,42 27,78 13,78" fill="url(#tfGrass1)"/>
+    <polygon points="38,42 50,42 41,78 27,78" fill="url(#tfGrass2)"/>
+    <polygon points="50,42 62,42 55,78 41,78" fill="url(#tfGrass1)"/>
+    <polygon points="62,42 74,42 69,78 55,78" fill="url(#tfGrass2)"/>
+    <polygon points="74,42 86,42 83,78 69,78" fill="url(#tfGrass1)"/>
+    <polygon points="86,42 94,42 107,78 83,78" fill="url(#tfGrass2)"/>
+  </g>
+
+  <!-- Field White Markings (Perspective Projection) -->
+  <polygon points="28,44 92,44 105,76 15,76" fill="none" stroke="#ffffff" stroke-width="1.8" opacity="0.9"/>
+  <!-- Center Halfway Line -->
+  <line x1="60" y1="44" x2="60" y2="76" stroke="#ffffff" stroke-width="1.6" opacity="0.9"/>
+  <!-- Center Circle in Perspective -->
+  <ellipse cx="60" cy="60" rx="14" ry="7" fill="none" stroke="#ffffff" stroke-width="1.6" opacity="0.9"/>
+  <circle cx="60" cy="60" r="1.5" fill="#ffffff"/>
+
+  <!-- Goal Post Structure at the Top Edge -->
+  <path d="M44 42 L44 26 L76 26 L76 42" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Goal Net Hexagonal Pattern -->
+  <path d="M44 26 L50 32 L70 32 L76 26" fill="none" stroke="#cbd5e1" stroke-width="1" opacity="0.6"/>
+  <path d="M50 32 L50 42 M57 26 L57 42 M63 26 L63 42 M70 32 L70 42" stroke="#cbd5e1" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Corner Flags (Orange/Gold Averroes Brand) -->
+  <line x1="28" y1="44" x2="28" y2="36" stroke="#ffffff" stroke-width="1.2"/>
+  <polygon points="28,36 33,38 28,40" fill="url(#tfGold)"/>
+  <line x1="92" y1="44" x2="92" y2="36" stroke="#ffffff" stroke-width="1.2"/>
+  <polygon points="92,36 87,38 92,40" fill="url(#tfGold)"/>
+
+  <!-- Dynamic 3D Soccer Ball in Foreground -->
+  <g transform="translate(68, 56)" filter="url(#tfBallShadow)">
+    <!-- Ball Core Sphere -->
+    <circle cx="16" cy="16" r="15" fill="url(#tfBallWhite)"/>
+    <circle cx="16" cy="16" r="15" fill="none" stroke="#94a3b8" stroke-width="0.8"/>
+
+    <!-- Classic Hexagon Patches on Ball -->
+    <!-- Center Hexagon -->
+    <polygon points="16,10 21,13 21,19 16,22 11,19 11,13" fill="url(#tfBallDark)"/>
+    <!-- Connecting Seams -->
+    <line x1="16" y1="10" x2="16" y2="3" stroke="#475569" stroke-width="1.2"/>
+    <line x1="21" y1="13" x2="28" y2="10" stroke="#475569" stroke-width="1.2"/>
+    <line x1="21" y1="19" x2="28" y2="22" stroke="#475569" stroke-width="1.2"/>
+    <line x1="16" y1="22" x2="16" y2="29" stroke="#475569" stroke-width="1.2"/>
+    <line x1="11" y1="19" x2="4" y2="22" stroke="#475569" stroke-width="1.2"/>
+    <line x1="11" y1="13" x2="4" y2="10" stroke="#475569" stroke-width="1.2"/>
+    <!-- Edge Patch Corner Hints -->
+    <path d="M13 2 C15 1.5, 17 1.5, 19 2 L16 3 Z" fill="url(#tfBallDark)"/>
+    <path d="M28 10 C30 12, 30.5 14, 30.5 16 L28 16 Z" fill="url(#tfBallDark)"/>
+    <path d="M28 22 C29.5 24, 29 26, 27 28 L25 25 Z" fill="url(#tfBallDark)"/>
+    <path d="M4 22 C2.5 20, 1.5 18, 1.5 16 L4 16 Z" fill="url(#tfBallDark)"/>
+    <!-- Light Reflection Highlight -->
+    <ellipse cx="12" cy="8" rx="4" ry="2" transform="rotate(-30 12 8)" fill="#ffffff" opacity="0.6"/>
+  </g>
+
+  <!-- Motion Speed Particles behind ball -->
+  <path d="M64 74 Q56 70 50 74" fill="none" stroke="url(#tfGold)" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="58" cy="71" r="1.4" fill="#f58220"/>
+  <circle cx="52" cy="67" r="1.2" fill="#10b981"/>
+</svg>

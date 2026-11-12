@@ -1,0 +1,19 @@
+# Environment files
+.env
+.env.backup
+.env.local
+
+# Dependency directories
+/vendor/
+
+# Server / OS generated files
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+
+# IDE & Editor settings
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace

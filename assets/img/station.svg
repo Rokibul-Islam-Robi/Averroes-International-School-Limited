@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 110" width="100%" height="100%">
+  <defs>
+    <linearGradient id="stCanopy" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffa040"/>
+      <stop offset="100%" stop-color="#f58220"/>
+    </linearGradient>
+    <linearGradient id="stCounter" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <linearGradient id="stBase" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f58220"/>
+      <stop offset="50%" stop-color="#ffb347"/>
+      <stop offset="100%" stop-color="#e66a05"/>
+    </linearGradient>
+    <linearGradient id="stScreen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <filter id="stShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Ground Floor Shadow -->
+  <ellipse cx="60" cy="94" rx="50" ry="8" fill="#e2e8f0"/>
+  <ellipse cx="60" cy="94" rx="42" ry="5" fill="#cbd5e1"/>
+
+  <!-- Kiosk Canopy Roof -->
+  <path d="M22 28 L30 14 H90 L98 28 Z" fill="url(#stCanopy)" filter="url(#stShadow)"/>
+  <!-- Canopy Fascia Strip with 3D Bevel -->
+  <rect x="20" y="28" width="80" height="9" rx="2" fill="#e66a05"/>
+  <text x="60" y="35" font-family="'Inter', sans-serif" font-size="6.8" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="0.8">SERVICE STATION</text>
+  <!-- Canopy Roof Rib Stripes -->
+  <line x1="38" y1="14" x2="33" y2="28" stroke="#ffbe76" stroke-width="1.8"/>
+  <line x1="52" y1="14" x2="50" y2="28" stroke="#ffbe76" stroke-width="1.8"/>
+  <line x1="68" y1="14" x2="70" y2="28" stroke="#ffbe76" stroke-width="1.8"/>
+  <line x1="82" y1="14" x2="87" y2="28" stroke="#ffbe76" stroke-width="1.8"/>
+
+  <!-- Sleek Chrome Support Pillars -->
+  <rect x="26" y="37" width="4" height="23" rx="1.5" fill="#94a3b8"/>
+  <line x1="27" y1="37" x2="27" y2="60" stroke="#f1f5f9" stroke-width="1"/>
+  <rect x="90" y="37" width="4" height="23" rx="1.5" fill="#94a3b8"/>
+  <line x1="91" y1="37" x2="91" y2="60" stroke="#f1f5f9" stroke-width="1"/>
+
+  <!-- Desktop PC / All-in-One Service Terminal -->
+  <rect x="48" y="44" width="24" height="15" rx="1.5" fill="#1e293b"/>
+  <rect x="50" y="46" width="20" height="11" rx="1" fill="url(#stScreen)"/>
+  <!-- Screen Dashboard Graphic -->
+  <circle cx="56" cy="51" r="2.5" fill="#ffffff"/>
+  <line x1="60" y1="49" x2="68" y2="49" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="60" y1="53" x2="66" y2="53" stroke="#93c5fd" stroke-width="1.2" stroke-linecap="round"/>
+  <!-- Monitor Stand -->
+  <rect x="58" y="59" width="4" height="4" fill="#64748b"/>
+  <rect x="55" y="62" width="10" height="1.5" rx="0.5" fill="#475569"/>
+
+  <!-- Brass Reception Desk Service Bell -->
+  <path d="M78 61 C78 57, 86 57, 86 61 Z" fill="#ffd166" stroke="#d97706" stroke-width="0.8"/>
+  <circle cx="82" cy="56.5" r="1.2" fill="#d97706"/>
+  <rect x="76.5" y="61" width="11" height="1.8" rx="0.8" fill="#475569"/>
+
+  <!-- Main Reception Counter Body (3D Perspective) -->
+  <!-- Top Counter Surface Ledge -->
+  <rect x="18" y="60" width="84" height="5" rx="2.5" fill="#f8fafc" stroke="#cbd5e1" stroke-width="0.8" filter="url(#stShadow)"/>
+
+  <!-- Counter Front Panel (Clean Professional Curve) -->
+  <rect x="22" y="65" width="76" height="28" rx="4" fill="url(#stCounter)" stroke="#cbd5e1" stroke-width="1"/>
+
+  <!-- Inset Vibrant School Accent Panel -->
+  <rect x="28" y="69" width="64" height="19" rx="3" fill="url(#stBase)"/>
+  <!-- Information Emblem Symbol -->
+  <circle cx="60" cy="78" r="6" fill="#ffffff"/>
+  <circle cx="60" cy="75" r="1.3" fill="#f58220"/>
+  <line x1="60" y1="78" x2="60" y2="82" stroke="#f58220" stroke-width="1.8" stroke-linecap="round"/>
+
+  <!-- Counter Plinth Base -->
+  <rect x="20" y="93" width="80" height="3" rx="1.5" fill="#334155"/>
+</svg>

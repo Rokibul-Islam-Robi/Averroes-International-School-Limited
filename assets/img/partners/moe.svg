@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 65" width="250" height="65">
+  <g transform="translate(10, 7)">
+    <circle cx="25" cy="25" r="24" fill="#006a4e" stroke="#f42a41" stroke-width="2.5"/>
+    <circle cx="25" cy="25" r="16" fill="#f42a41"/>
+    <path d="M25 15 C23 20, 20 23, 17 25 C21 26, 23 28, 25 32 C27 28, 29 26, 33 25 C30 23, 27 20, 25 15 Z" fill="#ffffff"/>
+    <circle cx="25" cy="25" r="3" fill="#fbc02d"/>
+    <circle cx="16" cy="18" r="1.5" fill="#ffffff"/>
+    <circle cx="34" cy="18" r="1.5" fill="#ffffff"/>
+  </g>
+  <text x="70" y="24" font-family="'Poppins', sans-serif" font-size="13" font-weight="800" fill="#005a40" letter-spacing="0.4">MINISTRY OF EDUCATION</text>
+  <text x="70" y="39" font-family="'Poppins', sans-serif" font-size="10.5" font-weight="600" fill="#1b1b1b">Govt. of the People's Republic of Bangladesh</text>
+  <text x="70" y="52" font-family="'Poppins', sans-serif" font-size="9" font-weight="700" fill="#d84315" letter-spacing="0.6">APPROVED &amp; RECOGNIZED</text>
+</svg>

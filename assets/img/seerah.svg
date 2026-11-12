@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 110" width="100%" height="100%">
+  <defs>
+    <linearGradient id="seGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe699"/>
+      <stop offset="50%" stop-color="#f58220"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+    <linearGradient id="seAmber" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="seAura" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fffbeb"/>
+      <stop offset="100%" stop-color="#fef3c7"/>
+    </linearGradient>
+    <linearGradient id="seScroll" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fef3c7"/>
+      <stop offset="50%" stop-color="#fffdf5"/>
+      <stop offset="100%" stop-color="#fde68a"/>
+    </linearGradient>
+    <linearGradient id="sePurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b1154"/>
+      <stop offset="100%" stop-color="#1f082e"/>
+    </linearGradient>
+    <filter id="seGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="seShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="2.5" flood-color="#000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Background Warm Aura of Sacred History -->
+  <circle cx="60" cy="48" r="36" fill="url(#seAura)" opacity="0.65"/>
+  <circle cx="60" cy="48" r="32" fill="none" stroke="url(#seGold)" stroke-width="1.2" stroke-dasharray="4,3" opacity="0.4"/>
+
+  <!-- Ornate Islamic Pavilion Arch (Exhibition Gateway) -->
+  <path d="M26 84 L26 46 C26 28, 48 16, 60 12 C72 16, 94 28, 94 46 L94 84" fill="none" stroke="url(#sePurple)" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M31 84 L31 48 C31 34, 48 24, 60 20 C72 24, 89 34, 89 48 L89 84" fill="none" stroke="url(#seGold)" stroke-width="1.8" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- Golden Dome Finial & Crescent Peak -->
+  <path d="M60 12 L60 6" stroke="url(#seGold)" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="60" cy="5" r="2" fill="url(#seGold)"/>
+  <path d="M63 4 C61.5 2, 58.5 2, 57 4 C58 5.5, 61 5.5, 63 4 Z" fill="url(#seGold)"/>
+
+  <!-- Exhibition Gallery Stage Base -->
+  <path d="M16 88 L104 88 C106 88, 108 89.5, 108 91 L108 94 C108 95, 106 96, 104 96 L16 96 C14 96, 12 95, 12 94 L12 91 C12 89.5, 14 88, 16 88 Z" fill="url(#seGold)" filter="url(#seShadow)"/>
+  <rect x="22" y="84" width="76" height="4" rx="1.5" fill="url(#seAmber)"/>
+
+  <!-- Open Historic Scroll of Prophetic Teachings (Centered Display) -->
+  <g filter="url(#seShadow)">
+    <path d="M36 40 C46 36, 54 44, 60 41 C66 44, 74 36, 84 40 L84 76 C74 72, 66 80, 60 77 C54 80, 46 72, 36 76 Z" fill="url(#seScroll)"/>
+    <path d="M36 40 C46 36, 54 44, 60 41 C66 44, 74 36, 84 40" fill="none" stroke="url(#seGold)" stroke-width="1.8"/>
+    <path d="M36 76 C46 72, 54 80, 60 77 C66 80, 74 72, 84 76" fill="none" stroke="url(#seGold)" stroke-width="1.8"/>
+    <!-- Scroll Side Roller Knobs -->
+    <rect x="33" y="38" width="3.5" height="40" rx="1.5" fill="url(#seAmber)"/>
+    <rect x="83.5" y="38" width="3.5" height="40" rx="1.5" fill="url(#seAmber)"/>
+  </g>
+
+  <!-- Script Calligraphy Lines on Scroll -->
+  <path d="M42 48 L56 48 M42 54 L56 54 M42 60 L54 60 M42 66 L52 66" stroke="#92400e" stroke-width="1.4" stroke-linecap="round" opacity="0.75"/>
+  <path d="M64 48 L78 48 M64 54 L78 54 M64 60 L76 60 M64 66 L74 66" stroke="#92400e" stroke-width="1.4" stroke-linecap="round" opacity="0.75"/>
+
+  <!-- Glowing Hanging Lantern of Guidance (Fanous on Left) -->
+  <path d="M22 34 L22 45" stroke="url(#seGold)" stroke-width="1" stroke-dasharray="1.5,1.5"/>
+  <g transform="translate(16, 45)">
+    <polygon points="6,0 2,4 10,4" fill="url(#seGold)"/>
+    <rect x="3" y="4" width="6" height="7" rx="1" fill="#fffbeb" stroke="url(#seGold)" stroke-width="0.8"/>
+    <circle cx="6" cy="7.5" r="2.2" fill="#f58220" opacity="0.85" filter="url(#seGlow)"/>
+    <polygon points="2,11 10,11 6,14" fill="url(#seGold)"/>
+  </g>
+
+  <!-- Exhibition Star Badge of Truth (Right Display) -->
+  <g transform="translate(92, 44)">
+    <circle cx="6" cy="6" r="6" fill="url(#seGold)" opacity="0.2"/>
+    <path d="M6 1 L7.5 4.5 L11 6 L7.5 7.5 L6 11 L4.5 7.5 L1 6 L4.5 4.5 Z" fill="url(#seGold)"/>
+  </g>
+
+  <!-- Sparkles of Enlightenment -->
+  <circle cx="34" cy="24" r="1.5" fill="#f58220"/>
+  <circle cx="86" cy="24" r="1.5" fill="#f58220"/>
+  <polygon points="60,28 61,31 64,32 61,33 60,36 59,33 56,32 59,31" fill="url(#seGold)"/>
+</svg>

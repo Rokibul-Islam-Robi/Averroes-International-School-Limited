@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 65" width="260" height="65">
+  <g transform="translate(8, 8)">
+    <path d="M4 4 L38 4 C38 4, 38 30, 21 44 C4 30, 4 4, 4 4 Z" fill="#b31b1b" stroke="#ffffff" stroke-width="1.8"/>
+    <path d="M4 19 L38 19 M21 4 L21 42" stroke="#fbc02d" stroke-width="3.8"/>
+    <circle cx="21" cy="19" r="3.2" fill="#ffffff"/>
+  </g>
+  <text x="56" y="24" font-family="'Poppins', sans-serif" font-size="13.5" font-weight="800" fill="#111111" letter-spacing="0.2">Cambridge Assessment</text>
+  <text x="56" y="40" font-family="'Poppins', sans-serif" font-size="12" font-weight="600" fill="#222222">International Education</text>
+  <text x="56" y="53" font-family="'Poppins', sans-serif" font-size="9.5" font-weight="700" fill="#b31b1b" letter-spacing="0.6">Cambridge International School</text>
+</svg>

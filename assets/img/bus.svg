@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 110" width="100%" height="100%">
+  <defs>
+    <linearGradient id="busBody" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffb830"/>
+      <stop offset="25%" stop-color="#f58220"/>
+      <stop offset="85%" stop-color="#e06a02"/>
+      <stop offset="100%" stop-color="#b84c00"/>
+    </linearGradient>
+    <linearGradient id="busRoof" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff275"/>
+      <stop offset="100%" stop-color="#ffb830"/>
+    </linearGradient>
+    <linearGradient id="busGlass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dbeafe"/>
+      <stop offset="50%" stop-color="#93c5fd"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="busTire" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="busRim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#94a3b8"/>
+    </linearGradient>
+    <filter id="busShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#000" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- Asphalt Road Shadow -->
+  <ellipse cx="60" cy="94" rx="54" ry="7" fill="#cbd5e1"/>
+  <ellipse cx="60" cy="94" rx="46" ry="4.5" fill="#94a3b8"/>
+
+  <!-- Bus Main Body Group with Realistic Depth -->
+  <g filter="url(#busShadow)">
+    <!-- Aerodynamic Roof Cap -->
+    <path d="M16 42 Q16 34 26 34 H96 Q106 34 107 42 Z" fill="url(#busRoof)"/>
+    <!-- Roof Flasher Lights -->
+    <ellipse cx="28" cy="33.5" rx="3.5" ry="1.8" fill="#ef4444"/>
+    <ellipse cx="94" cy="33.5" rx="3.5" ry="1.8" fill="#ef4444"/>
+    <ellipse cx="60" cy="33.5" rx="4" ry="1.8" fill="#f59e0b"/>
+
+    <!-- Main Chassis & Cabin -->
+    <path d="M12 42 H108 C111 42, 114 45, 114 50 L115 65 C115 67, 114 74, 114 76 H108 C108 73, 105 70, 100 70 C95 70, 92 73, 92 76 H42 C42 73, 39 70, 34 70 C29 70, 26 73, 26 76 H12 C10 76, 9 74, 9 72 L9 47 C9 44, 10 42, 12 42 Z" fill="url(#busBody)"/>
+
+    <!-- Front Hood & Bumper (Right Facing Profile) -->
+    <path d="M108 55 H115 C117 55, 118 57, 118 60 L117 76 H108 Z" fill="#e06a02"/>
+    <rect x="114" y="70" width="4" height="6" rx="1" fill="#334155"/>
+    <!-- Headlight with Glow -->
+    <circle cx="116" cy="62" r="2.8" fill="#fef08a"/>
+    <circle cx="116" cy="62" r="1.8" fill="#ffffff"/>
+
+    <!-- Tinted Gloss Windows with Sky Reflections -->
+    <g>
+      <!-- Rear Window -->
+      <rect x="14" y="42" width="12" height="15" rx="2" fill="url(#busGlass)"/>
+      <line x1="16" y1="43" x2="24" y2="55" stroke="#ffffff" stroke-width="1.2" opacity="0.6"/>
+      <!-- Passenger Windows 1, 2, 3, 4 -->
+      <rect x="30" y="42" width="14" height="15" rx="2" fill="url(#busGlass)"/>
+      <line x1="33" y1="43" x2="41" y2="55" stroke="#ffffff" stroke-width="1.2" opacity="0.6"/>
+
+      <rect x="48" y="42" width="14" height="15" rx="2" fill="url(#busGlass)"/>
+      <line x1="51" y1="43" x2="59" y2="55" stroke="#ffffff" stroke-width="1.2" opacity="0.6"/>
+
+      <rect x="66" y="42" width="14" height="15" rx="2" fill="url(#busGlass)"/>
+      <line x1="69" y1="43" x2="77" y2="55" stroke="#ffffff" stroke-width="1.2" opacity="0.6"/>
+
+      <!-- Front Driver Window (Slightly larger angle) -->
+      <path d="M84 42 H102 C104 42, 106 44, 106 47 L107 57 H84 Z" fill="url(#busGlass)"/>
+      <line x1="87" y1="43" x2="98" y2="55" stroke="#ffffff" stroke-width="1.5" opacity="0.7"/>
+
+      <!-- Rearview Mirror Bracket -->
+      <rect x="108" y="46" width="3" height="6" rx="1" fill="#1e293b"/>
+      <line x1="106" y1="49" x2="108" y2="49" stroke="#64748b" stroke-width="1.5"/>
+    </g>
+
+    <!-- Heavy-Duty Protective Rub Rails (Black Stripes) -->
+    <rect x="10" y="60" width="104" height="2" fill="#1e293b"/>
+    <rect x="10" y="71" width="104" height="2.5" fill="#1e293b"/>
+
+    <!-- School Bus Bold Side Sign -->
+    <rect x="28" y="63" width="70" height="7" rx="1.5" fill="#ffffff" opacity="0.95"/>
+    <text x="63" y="68.5" font-family="'Inter', sans-serif" font-size="5.2" font-weight="900" fill="#1e293b" text-anchor="middle" letter-spacing="0.8">AVERROES SCHOOL BUS</text>
+
+    <!-- Front & Rear Heavy Duty Bumpers -->
+    <rect x="6" y="73" width="5" height="4" rx="1" fill="#1e293b"/>
+    <rect x="114" y="73" width="4" height="4" rx="1" fill="#1e293b"/>
+  </g>
+
+  <!-- Heavy Duty Realistic Wheels (Front & Rear) -->
+  <!-- Rear Wheel Group -->
+  <g>
+    <!-- Outer Rubber Tire with Tread -->
+    <circle cx="34" cy="78" r="13" fill="url(#busTire)"/>
+    <circle cx="34" cy="78" r="11" fill="#1e293b"/>
+    <!-- Silver Alloy Wheel Rim -->
+    <circle cx="34" cy="78" r="7.5" fill="url(#busRim)"/>
+    <!-- Wheel Hubcap & Lug Nuts -->
+    <circle cx="34" cy="78" r="4" fill="#475569"/>
+    <circle cx="34" cy="78" r="1.8" fill="#cbd5e1"/>
+    <!-- Tread notch details -->
+    <line x1="34" y1="65" x2="34" y2="67" stroke="#475569" stroke-width="1.5"/>
+    <line x1="34" y1="89" x2="34" y2="91" stroke="#475569" stroke-width="1.5"/>
+  </g>
+
+  <!-- Front Wheel Group -->
+  <g>
+    <!-- Outer Rubber Tire with Tread -->
+    <circle cx="100" cy="78" r="13" fill="url(#busTire)"/>
+    <circle cx="100" cy="78" r="11" fill="#1e293b"/>
+    <!-- Silver Alloy Wheel Rim -->
+    <circle cx="100" cy="78" r="7.5" fill="url(#busRim)"/>
+    <!-- Wheel Hubcap & Lug Nuts -->
+    <circle cx="100" cy="78" r="4" fill="#475569"/>
+    <circle cx="100" cy="78" r="1.8" fill="#cbd5e1"/>
+    <!-- Tread notch details -->
+    <line x1="100" y1="65" x2="100" y2="67" stroke="#475569" stroke-width="1.5"/>
+    <line x1="100" y1="89" x2="100" y2="91" stroke="#475569" stroke-width="1.5"/>
+  </g>
+</svg>

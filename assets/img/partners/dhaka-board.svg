@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 65" width="250" height="65">
+  <g transform="translate(8, 8)">
+    <circle cx="24" cy="24" r="22" fill="#1b3a4b" stroke="#fbc02d" stroke-width="2.5"/>
+    <path d="M14 21 L24 13 L34 21 L24 29 Z" fill="#fbc02d"/>
+    <rect x="22" y="29" width="4" height="9" fill="#ffffff"/>
+    <circle cx="24" cy="38" r="2.2" fill="#fbc02d"/>
+  </g>
+  <text x="60" y="22" font-family="'Poppins', sans-serif" font-size="12.5" font-weight="800" fill="#142834" letter-spacing="0.3">DHAKA EDUCATION BOARD</text>
+  <text x="60" y="37" font-family="'Poppins', sans-serif" font-size="10.5" font-weight="600" fill="#333333">DSHE &amp; BISE Affiliated</text>
+  <text x="60" y="50" font-family="'Poppins', sans-serif" font-size="9" font-weight="700" fill="#1b5e20" letter-spacing="0.6">EIIN RECOGNIZED CENTRE</text>
+</svg>

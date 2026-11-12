@@ -1,0 +1,48 @@
+# =====================================================================
+# Averroes International School - Root Server Security Configuration
+# =====================================================================
+
+# 1. Disable Directory Browsing
+Options -Indexes
+
+# 2. Set Default Directory Index
+DirectoryIndex index.php index.html
+
+# 3. Block Direct HTTP Access to Sensitive Files and Extensions
+<FilesMatch "(?i)\.(env|sql|log|md|json|lock|git|yml|yaml|ini|bak|swp|dist)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+# 4. Block Hidden Files (starting with a dot)
+<FilesMatch "^\.">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+# 5. Security Headers
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# 6. URL Rewriting for Clean Sub-Page Routing
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Rewrite /first-in-bangladesh/:slug to program.php?slug=:slug
+    RewriteRule ^first-in-bangladesh/([a-zA-Z0-9_-]+)/?$ program.php?slug=$1 [L,QSA]
+    
+    # Rewrite /program/:slug to program.php?slug=:slug
+    RewriteRule ^program/([a-zA-Z0-9_-]+)/?$ program.php?slug=$1 [L,QSA]
+</IfModule>

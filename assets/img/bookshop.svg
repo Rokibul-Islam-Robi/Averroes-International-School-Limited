@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 110" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bkRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e74c3c"/>
+      <stop offset="100%" stop-color="#962d22"/>
+    </linearGradient>
+    <linearGradient id="bkBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3498db"/>
+      <stop offset="100%" stop-color="#1d6fa5"/>
+    </linearGradient>
+    <linearGradient id="bkGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f39c12"/>
+      <stop offset="100%" stop-color="#d35400"/>
+    </linearGradient>
+    <linearGradient id="bkPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8e44ad"/>
+      <stop offset="100%" stop-color="#47195d"/>
+    </linearGradient>
+    <linearGradient id="bkDesk" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d2b48c"/>
+      <stop offset="100%" stop-color="#8b5a2b"/>
+    </linearGradient>
+    <linearGradient id="bkPages" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#eef2f7"/>
+    </linearGradient>
+    <filter id="bkShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="2.5" flood-color="#000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Wooden Desk Shelf Surface -->
+  <ellipse cx="60" cy="94" rx="52" ry="7" fill="#cbd5e1"/>
+  <rect x="14" y="90" width="92" height="6" rx="2" fill="url(#bkDesk)" filter="url(#bkShadow)"/>
+
+  <!-- Left Standing Library Books on Shelf -->
+  <!-- Purple Book 1 -->
+  <rect x="20" y="32" width="10" height="58" rx="2" fill="url(#bkPurple)" filter="url(#bkShadow)"/>
+  <rect x="22" y="36" width="6" height="3" fill="#ffd166"/>
+  <rect x="22" y="80" width="6" height="2" fill="#ffd166"/>
+
+  <!-- Gold/Orange Book 2 (Tilted Angle) -->
+  <rect x="33" y="24" width="11" height="66" rx="2" fill="url(#bkGold)" filter="url(#bkShadow)"/>
+  <line x1="33" y1="36" x2="44" y2="36" stroke="#ffffff" stroke-width="1.8" opacity="0.8"/>
+  <line x1="33" y1="80" x2="44" y2="80" stroke="#ffffff" stroke-width="1.8" opacity="0.8"/>
+
+  <!-- Red Book 3 -->
+  <rect x="46" y="36" width="11" height="54" rx="2" fill="url(#bkRed)" filter="url(#bkShadow)"/>
+  <rect x="48" y="42" width="7" height="4" fill="#ffd166"/>
+  <rect x="48" y="78" width="7" height="2" fill="#ffd166"/>
+
+  <!-- Blue Book 4 (Leaning slightly right) -->
+  <g transform="rotate(12 62 88)">
+    <rect x="58" y="28" width="10" height="62" rx="2" fill="url(#bkBlue)" filter="url(#bkShadow)"/>
+    <line x1="58" y1="40" x2="68" y2="40" stroke="#ffffff" stroke-width="1.8" opacity="0.8"/>
+    <line x1="58" y1="78" x2="68" y2="78" stroke="#ffffff" stroke-width="1.8" opacity="0.8"/>
+  </g>
+
+  <!-- Right Foreground: Stack of Textbooks with Open Reader Notebook -->
+  <!-- Horizontal Stacked Book 1 (Bottom of Stack) -->
+  <rect x="68" y="82" width="40" height="8" rx="2" fill="url(#bkPurple)"/>
+  <rect x="70" y="83" width="36" height="5" fill="url(#bkPages)"/>
+
+  <!-- Horizontal Stacked Book 2 -->
+  <rect x="71" y="73" width="37" height="8" rx="2" fill="url(#bkBlue)"/>
+  <rect x="73" y="74" width="33" height="5" fill="url(#bkPages)"/>
+
+  <!-- Open Textbook / Notebook Resting on Stack -->
+  <!-- Left Open Page -->
+  <path d="M88 72 C80 62, 68 64, 60 66 L60 52 C68 50, 80 50, 88 58 Z" fill="url(#bkPages)" stroke="#cbd5e1" stroke-width="0.8" filter="url(#bkShadow)"/>
+  <!-- Right Open Page -->
+  <path d="M88 72 C96 62, 108 64, 116 66 L116 52 C108 50, 96 50, 88 58 Z" fill="url(#bkPages)" stroke="#cbd5e1" stroke-width="0.8" filter="url(#bkShadow)"/>
+
+  <!-- Book Cover Flap Beneath Pages -->
+  <path d="M59 66 L88 73 L117 66" stroke="#d35400" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Notebook Text Lines -->
+  <line x1="65" y1="56" x2="82" y2="56" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="64" y1="60" x2="83" y2="60" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="93" y1="56" x2="110" y2="56" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="93" y1="60" x2="111" y2="60" stroke="#94a3b8" stroke-width="1"/>
+
+  <!-- Reading Glasses Resting on Open Book -->
+  <circle cx="78" cy="62" r="5" fill="none" stroke="#e67e22" stroke-width="1.5"/>
+  <circle cx="98" cy="62" r="5" fill="none" stroke="#e67e22" stroke-width="1.5"/>
+  <path d="M83 62 Q88 60 93 62" fill="none" stroke="#e67e22" stroke-width="1.5"/>
+  <line x1="73" y1="62" x2="68" y2="60" stroke="#e67e22" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="103" y1="62" x2="108" y2="60" stroke="#e67e22" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Yellow Golden Bookmark Ribbon Hanging -->
+  <path d="M88 58 Q89 68 87 78 L85 75 L83 77 Q86 68 88 58 Z" fill="#ffd166"/>
+</svg>

@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 110" width="100%" height="100%">
+  <defs>
+    <linearGradient id="swAquaAura" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0f2fe"/>
+      <stop offset="100%" stop-color="#bae6fd"/>
+    </linearGradient>
+    <linearGradient id="swDeep" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+    <linearGradient id="swMid" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0ea5e9"/>
+    </linearGradient>
+    <linearGradient id="swTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7dd3fc"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <linearGradient id="swAthlete" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fb923c"/>
+      <stop offset="50%" stop-color="#f58220"/>
+      <stop offset="100%" stop-color="#c2410c"/>
+    </linearGradient>
+    <linearGradient id="swCap" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b1154"/>
+      <stop offset="100%" stop-color="#1f082e"/>
+    </linearGradient>
+    <filter id="swShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2.5" stdDeviation="2" flood-color="#0369a1" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Background Fresh Pool Aura -->
+  <circle cx="60" cy="50" r="36" fill="url(#swAquaAura)" opacity="0.6"/>
+
+  <!-- Swimming Pool Lane Rope (Top Diagonal Arc) -->
+  <path d="M14 36 C42 30, 78 30, 106 36" fill="none" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="2,2"/>
+  <!-- Lane Rope Floaters / Buoys in School Brand Colors -->
+  <circle cx="20" cy="35" r="3.2" fill="#f58220"/>
+  <circle cx="34" cy="32.5" r="3.2" fill="#ffffff" stroke="#cbd5e1" stroke-width="0.8"/>
+  <circle cx="48" cy="31" r="3.2" fill="#3b1154"/>
+  <circle cx="62" cy="30.5" r="3.2" fill="#f58220"/>
+  <circle cx="76" cy="31.2" r="3.2" fill="#ffffff" stroke="#cbd5e1" stroke-width="0.8"/>
+  <circle cx="90" cy="33" r="3.2" fill="#3b1154"/>
+  <circle cx="102" cy="35.5" r="3.2" fill="#f58220"/>
+
+  <!-- Deep Water Layer (Bottom base) -->
+  <path d="M12 76 C24 72, 40 82, 60 76 C80 70, 96 80, 108 76 L108 92 C96 95, 80 93, 60 95 C40 93, 24 95, 12 92 Z" fill="url(#swDeep)"/>
+
+  <!-- Mid Wave Layer -->
+  <path d="M10 66 C26 58, 44 74, 60 67 C76 60, 94 72, 110 65 L110 82 C94 85, 76 76, 60 82 C44 76, 26 85, 10 82 Z" fill="url(#swMid)" opacity="0.85"/>
+
+  <!-- Swimmer Athlete - Freestyle Stroke Body -->
+  <g filter="url(#swShadow)">
+    <!-- Back Torso & Shoulder -->
+    <path d="M42 54 C48 48, 64 47, 76 52 C72 58, 54 59, 42 54 Z" fill="url(#swAthlete)"/>
+
+    <!-- Left Arm Extended Forward Gliding on Water -->
+    <path d="M72 50 C80 47, 92 46, 99 44 C100 45, 98 47, 94 49 C86 52, 76 53, 72 50 Z" fill="url(#swAthlete)"/>
+
+    <!-- Right Arm Recovery Arc High Out of Water -->
+    <path d="M52 48 C50 36, 56 26, 64 22 C67 23, 66 28, 60 36 C57 40, 56 46, 52 48 Z" fill="url(#swAthlete)"/>
+    <!-- Right Hand -->
+    <ellipse cx="64" cy="22" rx="2.5" ry="1.8" transform="rotate(-30 64 22)" fill="url(#swAthlete)"/>
+
+    <!-- Swimmer's Head with Royal Purple Swim Cap -->
+    <circle cx="65" cy="46" r="6" fill="url(#swCap)"/>
+    <!-- Swim Goggles (Reflective Cyan Lens with Strap) -->
+    <path d="M63 46 Q66 45 70 45" stroke="#f58220" stroke-width="1.2" fill="none"/>
+    <ellipse cx="68" cy="46" rx="2" ry="1.5" fill="#38bdf8"/>
+    <circle cx="68.5" cy="45.5" r="0.6" fill="#ffffff"/>
+  </g>
+
+  <!-- Front Cresting Wave & Splash Details -->
+  <path d="M8 60 C24 50, 42 66, 60 59 C78 52, 96 64, 112 57 C100 68, 78 62, 60 70 C42 63, 24 70, 8 60 Z" fill="url(#swTop)" opacity="0.9"/>
+  <!-- White Water Foam Edge Highlights -->
+  <path d="M12 60 C28 52, 44 65, 60 59 C76 53, 92 63, 108 57" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+  <path d="M18 70 C34 64, 48 76, 62 70 C78 64, 92 74, 104 69" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- Dynamic Splash Droplets -->
+  <circle cx="56" cy="25" r="1.8" fill="#38bdf8"/>
+  <circle cx="62" cy="18" r="1.4" fill="#0ea5e9"/>
+  <circle cx="70" cy="23" r="1.6" fill="#7dd3fc"/>
+  <circle cx="78" cy="38" r="1.5" fill="#38bdf8"/>
+  <circle cx="102" cy="42" r="1.6" fill="#38bdf8"/>
+  <circle cx="38" cy="50" r="1.3" fill="#38bdf8"/>
+  <circle cx="44" cy="44" r="1.6" fill="#7dd3fc"/>
+</svg>
