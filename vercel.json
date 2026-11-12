@@ -1,19 +1,11 @@
 {
   "version": 2,
   "builds": [
-    { "src": "*.php", "use": "vercel-php@0.7.1" },
-    { "src": "api/**/*.php", "use": "vercel-php@0.7.1" },
-    { "src": "admin/**/*.php", "use": "vercel-php@0.7.1" },
+    { "src": "router.php", "use": "vercel-php@0.7.1" },
     { "src": "assets/**", "use": "@vercel/static" }
   ],
   "routes": [
     { "src": "/assets/(.*)", "dest": "/assets/$1" },
-    { "src": "/admin", "dest": "/admin/index.php" },
-    { "src": "/admin/(.*)", "dest": "/admin/$1" },
-    { "src": "/api/(.*)", "dest": "/api/$1" },
-    { "src": "/first-in-bangladesh/(.*)", "dest": "/program.php?slug=$1" },
-    { "src": "/program/(.*)", "dest": "/program.php?slug=$1" },
-    { "src": "/(.*\\.php)", "dest": "/$1" },
-    { "src": "/(.*)", "dest": "/index.php" }
+    { "src": "/(.*)", "dest": "/router.php" }
   ]
 }
